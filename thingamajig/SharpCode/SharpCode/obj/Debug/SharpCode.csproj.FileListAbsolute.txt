@@ -1,0 +1,14 @@
+c:\users\admin\documents\visual studio 2013\Projects\SharpCode\SharpCode\bin\Debug\SharpCode.exe.config
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\obj\Debug\SharpCode.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\obj\Debug\app.exe
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\obj\Debug\app.pdb
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\app.exe.config
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\app.exe
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\app.pdb
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\app.js
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\mscorlib.dll
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\Saltarelle.Knockout.dll
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\Saltarelle.Web.dll
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\mscorlib.xml
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\Saltarelle.Knockout.xml
+C:\Users\Admin\Desktop\thingamajig\thingamajig\SharpCode\SharpCode\bin\Debug\Saltarelle.Web.xml
