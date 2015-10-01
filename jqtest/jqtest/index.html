@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <title>Getting Started</title>
+    <!-- add one of the jQWidgets styles -->
+    <link rel="stylesheet"
+          href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <!--<link rel="stylesheet"
+          href="jqwidgets/styles/myStyle.css" type="text/css" />-->
+    <link rel="stylesheet"
+          href="jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxinput.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="scripts/json2.js"></script>
+    <script type="text/javascript" src="scripts/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="scripts/demos.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxknockout.js"></script>
+    <!-- add the jQuery script -->
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+    <!-- add the jQWidgets framework -->
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <!-- add one or more widgets -->
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script src="lib/mscorlib.js"></script> 
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="add.js"></script>
+</head>
+<body>
+   
+    <br /><br />
+    <div>
+        <input data-bind="click: multiplicate, jqxButton: {}" type="button" value="Multiply " />
+        <input data-bind="click: compute, jqxButton: {}" type="button" value="Add" /><br /><br />
+        <input id="firstName" data-bind="jqxInput: {width: 200, height: 25, placeHolder: 'A', value: a}" /><br />
+        <input id="firstName" data-bind="jqxInput: {width: 200, height: 25, placeHolder: 'B', value: b}" /><br />
+        <input id="firstName" data-bind="jqxInput: {width: 200, height: 25, placeHolder: 'Result', value: result}" />
+    </div>
+   
+</body>
+</html>

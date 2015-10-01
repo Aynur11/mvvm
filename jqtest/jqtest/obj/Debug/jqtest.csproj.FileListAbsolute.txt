@@ -1,0 +1,13 @@
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\app.exe.config
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\obj\Debug\app.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\obj\Debug\app.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\app.exe
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\app.pdb
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\app.js
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\mscorlib.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\Saltarelle.Knockout.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\Saltarelle.Web.dll
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\mscorlib.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\Saltarelle.Knockout.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\bin\Debug\Saltarelle.Web.xml
+C:\Users\Admin\Documents\Visual Studio 2013\Projects\jqtest\jqtest\obj\Debug\jqtest.csprojResolveAssemblyReference.cache
