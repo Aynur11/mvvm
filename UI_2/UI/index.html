@@ -1,0 +1,254 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <title>Getting Started</title>
+    <!-- add one of the jQWidgets styles -->
+    <link rel="stylesheet"
+          href="Libs/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <!--<link rel="stylesheet"
+          href="jqwidgets/styles/myStyle.css" type="text/css" />-->
+    <link rel="stylesheet"
+          href="Libs/jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="Libs/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="Libs/scripts/json2.js"></script>
+    <script type="text/javascript" src="Libs/scripts/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="Libs/scripts/demos.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxknockout.js"></script>
+    <!-- add the jQuery script -->
+    <script type="text/javascript" src="Libs/scripts/jquery-1.11.1.min.js"></script>
+    <!-- add the jQWidgets framework -->
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <!-- add one or more widgets -->
+    <script type="text/javascript" src="Libs/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcheckbox.js"></script>
+
+    <script type="text/javascript" src="Libs/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxchart.core.js"></script>
+
+
+
+    <script src="Libs/lib/mscorlib.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="additional.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        // prepare the data
+        var source =
+        {
+            datatype: "csv",
+            datafields: [
+                { name: 'Date' },
+                { name: 'S&P 500' },
+                { name: 'NASDAQ' }
+            ],
+            url: '../sampledata/nasdaq_vs_sp500.txt'
+        };
+        var dataAdapter = new $.jqx.dataAdapter(source, { async: false, autoBind: true });
+        var months = ['Jan'];
+        // prepare jqxChart settings
+        var settings = {
+            title: "U.S. Stock Market Index Performance",
+            description: "NASDAQ Composite compared to S&P 500",
+            enableAnimations: true,
+            showLegend: true,
+            padding: { left: 10, top: 5, right: 10, bottom: 5 },
+            titlePadding: { left: 50, top: 0, right: 0, bottom: 10 },
+            source: dataAdapter,
+            xAxis:
+            {
+                dataField: 'Date',
+                formatFunction: function (value) {
+                    return value.getDate() + '-' + months[value.getMonth()] + '-' + value.getFullYear();
+                },
+                type: 'date',
+                baseUnit: 'month',
+                valuesOnTicks: true,
+                minValue: '01-01-2014',
+                maxValue: '01-01-2015',
+                tickMarks: {
+                    visible: true,
+                    interval: 1,
+                    color: '#BCBCBC'
+                },
+                unitInterval: 1,
+                gridLines: {
+                    visible: true,
+                    interval: 3,
+                    color: '#BCBCBC'
+                },
+                labels: {
+                    angle: -45,
+                    rotationPoint: 'topright',
+                    offset: { x: 0, y: -25 }
+                }
+            },
+            valueAxis:
+            {
+                visible: true,
+                title: { text: 'Daily Closing Price<br>' },
+                tickMarks: { color: '#BCBCBC' }
+            },
+            colorScheme: 'scheme04',
+            seriesGroups:
+                [
+                    {
+                        type: 'line',
+                        series: [
+                                { dataField: 'S&P 500', displayText: 'S&P 500' },
+                                { dataField: 'NASDAQ', displayText: 'NASDAQ' }
+                        ]
+                    }
+                ]
+        };
+        // setup the chart
+        $('#chartContainer1').jqxChart(settings);
+        $('#chartContainer2').jqxChart(settings);
+        $('#chartContainer3').jqxChart(settings);
+        $('#chartContainer4').jqxChart(settings);
+    });
+    </script>
+
+
+
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#button1").on('click', function () {
+            $("#listbox2").hide();
+            $("#listbox").show();
+            $("#chartContainer1").show();
+            $("#chartContainer2").show();
+            $("#chartContainer3").show();
+            $("#chartContainer4").show();
+        });
+        $("#button2").on('click', function () {
+            $("#chartContainer1").hide();
+            $("#chartContainer2").hide();
+            $("#chartContainer3").hide();
+            $("#chartContainer4").hide();
+            $("#listbox2").show();
+        });
+        });
+    </script>
+ 
+    <div id='button1'>
+        <!--<input data-bind="click: multiplicate, jqxButton: {}" type="button" value="Multiply " />-->
+        <input data-bind="jqxButton: {}" style='width:120px; height:120px'  type="button" value="Well" /></div>
+ 
+    <div id='button2'>
+        <input data-bind="jqxButton: {}" style='width:120px; height:120px' type="button" value="PVT" /></div>
+ 
+
+    <div id='content'>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var source = [
+                    "Well Survey 1",
+                    "Well Survey 2",
+                    "Well Survey 3",
+                    "Well Survey 4",
+                    "Well Survey 5"
+                ];
+                var source2 = [
+                   "PVT 1",
+                   "PVT 2",
+                   "PVT 3",
+                   "PVT 4",
+                   "PVT 5"
+                ];
+                // Create a jqxListBox
+                $("#listbox").jqxListBox({ width: 200, source: source, checkboxes: true, height: 250 });
+                $("#listbox2").jqxListBox({ width: 200, source: source2, checkboxes: true, height: 250 });
+                $("#listbox2").hide();
+                // Check several items.
+                /*
+                $("#listbox").jqxListBox('checkIndex', 0);
+                $("#listbox").jqxListBox('checkIndex', 3);
+                */
+                $("#chartContainer1").hide();
+                $("#chartContainer2").hide();
+                $("#chartContainer3").hide();
+                $("#chartContainer4").hide();
+
+                $("#listbox").on('checkChange', function (event) {
+                    var args = event.args;
+                    if (args.checked) {
+                        //alert(args.checked);
+                        var items = $("#listbox").jqxListBox('getCheckedItems');
+                        for (var i = 0; i < items.length; i++) {
+                            var item = items[i];
+                            if (item.index == 0) { $("#chartContainer1").show(); }
+                            if (item.index == 1) { $("#chartContainer2").show(); }
+                            if (item.index == 2) { $("#chartContainer3").show(); }
+                            if (item.index == 3) { $("#chartContainer4").show(); }
+
+                            //alert(item.index + 1);
+                        }
+
+                            //$("#chartContainer1").show();
+
+                        $("#Events").text("Checked: " + args.label);
+                    }
+                    else {
+                        $("#Events").text("Unchecked: " + args.label);
+                        var items = $("#listbox").jqxListBox('getUncheckedItems');
+                        alert(items.length);
+                        for (var i = 0; i < items.length; i++) {
+                            var item = items[i];
+                            if (item.index == 0) { $("#chartContainer1").hide(); }
+                            if (item.index == 1) { $("#chartContainer2").hide(); }
+                            if (item.index == 2) { $("#chartContainer3").hide(); }
+                            if (item.index == 3) { $("#chartContainer4").hide(); }
+
+                            //alert(item.index + 1);
+                        }
+                        
+                    }
+                    
+                    
+                    
+                    
+                    var checkedItems = "";
+                    $.each(items, function (index) {
+                        if (index < items.length - 1) {
+                            checkedItems += this.label + ", ";
+                        }
+                        else checkedItems += this.label;
+                    });
+                    $("#CheckedItems").text(checkedItems);
+                });
+            });
+        </script>
+        <div id='jqxWidget'>
+            <div id="listbox"></div>
+            <!--
+            <div style="font-size: 13px; font-family: Verdana; margin-top: 20px;" id="Events"></div>
+            <div style="font-size: 13px; font-family: Verdana; margin-top: 10px;" id="CheckedItems"></div>
+            -->
+            <div id="listbox2"></div>
+        </div>
+       
+    </div>
+    <div id='chartContainer1' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer2' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer3' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer4' style="width:200px; height:200px">
+    </div>
+</body>
+</html>
