@@ -1,0 +1,58 @@
+* {
+
+}
+body {
+    background: #e2dada;
+}
+#button1 {
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#button2 {
+    
+    margin-left: 20px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+
+}
+#content {
+    position: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#listbox {
+    background: #e2dada;
+    top: 41px;
+    left: 200px;
+}
+#listbox2 {
+    background: #e2dada;
+    top: 41px;
+    left: 200px;
+}
+#button1,#button2, #listbox, #listbox2, #chartContainer1, #chartContainer2, #chartContainer3, #chartContainer4 {
+    position: absolute;
+}
+#chartContainer1{
+    margin-left: 430px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#chartContainer2{
+    margin-left: 650px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#chartContainer3{
+    margin-left: 870px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#chartContainer4{
+    margin-left: 430px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
