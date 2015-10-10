@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <title>Getting Started</title>
+    <!-- add one of the jQWidgets styles -->
+    <link rel="stylesheet"
+          href="Libs/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <!--<link rel="stylesheet"
+          href="jqwidgets/styles/myStyle.css" type="text/css" />-->
+    <link rel="stylesheet"
+          href="Libs/jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="Libs/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="Libs/scripts/json2.js"></script>
+    <script type="text/javascript" src="Libs/scripts/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="Libs/scripts/demos.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxknockout.js"></script>
+    <!-- add the jQuery script -->
+    <script type="text/javascript" src="Libs/scripts/jquery-1.11.1.min.js"></script>
+    <!-- add the jQWidgets framework -->
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcore.js"></script>
+    <!-- add one or more widgets -->
+    <script type="text/javascript" src="Libs/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcheckbox.js"></script>
+
+    <script type="text/javascript" src="Libs/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxchart.core.js"></script>
+
+    <!--For toolbar-->
+    <script type="text/javascript" src="Libs/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxcombobox.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="Libs/jqwidgets/jqxtoolbar.js"></script>
+
+    <script type="text/javascript" src="Libs/jqwidgets/jqxchart.js"></script>
+
+    <script src="Libs/lib/mscorlib.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="additional.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id='button1'>
+        <!--<input data-bind="click: multiplicate, jqxButton: {}" type="button" value="Multiply " />-->
+        <input data-bind="jqxButton: {}" style='width:120px; height:120px'  type="button" value="Well" /></div>
+    <div id='button2'>
+        <input data-bind="jqxButton: {}" style='width:120px; height:120px' type="button" value="PVT" /></div>
+    <!--<div id='content'>-->
+        <div id='jqxWidget'>
+            <div id="listbox"></div>
+            <div id="listbox2"></div>
+        </div>
+    <!--</div>-->
+    <div id='chartContainer1' style="width:400px; height:400px">
+    </div>
+    <div id='chartContainer2' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer3' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer4' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer5' style="width:200px; height:200px">
+    </div>
+    <div id='chartContainer6' style="width:200px; height:200px">
+    </div>
+
+
+
+    <div id="chart" style="width: 670px; height: 400px;" data-bind='jqxChart: {
+                title: "Fitness & exercise weekly scorecard",
+                description: "Time spent in vigorous exercise",
+			    showLegend: true,
+                padding: { left: 5, top: 5, right: 5, bottom: 5 },
+                titlePadding: { left: 90, top: 0, right: 0, bottom: 10 },
+                source: items,
+                categoryAxis:
+                    {
+                        dataField: "Day",
+                        valuesOnTicks: false,
+                        showGridLines: true
+                    },
+                colorScheme: "scheme01",
+                enableAnimations: true,
+                seriesGroups:
+                    [
+                        {
+                            type: "column",
+                            columnsGapPercent: 50,
+                            seriesGapPercent: 0,
+                            valueAxis:
+                            {
+                                unitInterval: 10,
+                                minValue: 0,
+                                maxValue: 100,
+                                displayValueAxis: true,
+                                description: "Time in minutes",
+                                axisSize: "auto",
+                                tickMarksColor: "#888888"
+                            },
+                            series: [
+                                    { dataField: "Keith", displayText: "Keith"},
+                                    { dataField: "Erica", displayText: "Erica"},
+                                    { dataField: "George", displayText: "George"}
+                                ]
+                        }
+                    ]
+            }'>
+    </div>
+    <br />
+        <div style="margin-bottom: 10px;">
+            <input id="updateButton" type="button" data-bind="click: updateItem, jqxButton: {}" value="Update Data" />
+        </div>
+    <table>
+        <tbody data-bind="foreach: items">
+            <tr>
+                <td data-bind="text: Day"></td>
+                <td data-bind="text: Keith"></td>
+                <td data-bind="text: Erica"></td>
+                <td data-bind="text: George"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <div id="jqxToolBar">
+    </div>
+
+    <div style='width:200px;' id='jqxWidget2'>
+        <div>
+            <input style='margin-left: 25px;' type="button" value="The toolbar is switched on" id='jqxButton' />
+        </div>
+    </div>
+
+</body>
+</html>

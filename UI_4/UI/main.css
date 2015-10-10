@@ -1,0 +1,86 @@
+* {
+
+}
+body {
+    background: #e2dada;
+}
+#button1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#button2 {
+    margin-left: 20px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+/*
+#content {
+    position: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+*/
+#listbox {
+    background: #e2dada;
+    top: 21px;
+    left: 200px;
+}
+#listbox2 {
+    background: #e2dada;
+    top: 21px;
+    left: 200px;
+}
+#button1,#button2, #listbox, #listbox2, #chartContainer1, #chartContainer2,
+ #chartContainer3, #chartContainer4, #chartContainer5, #chartContainer6 {
+    position: absolute;
+}
+#chartContainer1{
+    margin-left: 430px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#chartContainer2{
+    margin-left: 650px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#chartContainer3{
+    margin-left: 430px;
+    margin-top: 215px;
+    margin-bottom: 20px;
+}
+#chartContainer4{
+    margin-left: 650px;
+    margin-top: 215px;
+    margin-bottom: 20px;
+}
+#chartContainer5{
+    margin-left: 430px;
+    margin-top: 425px;
+    margin-bottom: 20px;
+}
+#chartContainer6{
+    margin-left: 650px;
+    margin-top: 425px;
+    margin-bottom: 20px;
+}
+#jqxToolBar {
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/*alignment of the letters of the toolbar*/
+.buttonIcon{
+    margin: -5px 0 0 -3px;
+    width: 16px;
+    height: 17px;
+}
+#jqxWidget2{
+    position: absolute;
+    margin-left: 925px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
