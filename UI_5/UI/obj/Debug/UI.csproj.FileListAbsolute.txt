@@ -1,0 +1,13 @@
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\mscorlib.dll
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\Saltarelle.Knockout.dll
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\Saltarelle.Web.dll
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\mscorlib.xml
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\Saltarelle.Knockout.xml
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\Saltarelle.Web.xml
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\app.exe.config
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\app.exe
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\app.pdb
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\bin\Debug\app.js
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\obj\Debug\app.exe
+c:\users\admin\documents\visual studio 2013\Projects\UI\UI\obj\Debug\app.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\UI\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
