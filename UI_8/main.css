@@ -1,0 +1,65 @@
+* {
+}
+body {
+    background: #e2dada;
+}
+#listbox {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    background: #d8c4c4;
+}
+#jqxToolBar {
+    position: absolute;
+    margin-left: 1120px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+/*alignment of the letters of the toolbar*/
+.buttonIcon{
+    margin: -5px 0 0 -3px;
+    width: 16px;
+    height: 17px;
+}
+#jqxWidget2{
+    position: absolute;
+    margin-left: 1096px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#data1{
+    position:absolute;
+    margin-left: 330px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+#data2{
+    position: absolute;
+    margin-left: 580px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+#data3{
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+#gridData1{
+    position:absolute;
+    margin-left: 330px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#jqxDraw1 {
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#jqxDraw2 {
+    position: absolute;
+    margin-left: 830px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
